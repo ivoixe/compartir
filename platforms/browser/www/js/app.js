@@ -31,22 +31,26 @@
           {
               title: 'Item 1 Title',
               label: '4h',
-              desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+              desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+              img: 'img/crisantemo.jpg'
           },
           {
               title: 'Another Item Title',
               label: '6h',
-              desc: 'Ut enim ad minim veniam.'
+              desc: 'Ut enim ad minim veniam.',
+               img: 'img/crisantemo.jpg'
           },
           {
               title: 'Yet Another Item Title',
               label: '1day ago',
-              desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+              desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+              img: 'img/crisantemo.jpg'
           },
           {
               title: 'Yet Another Item Title',
               label: '1day ago',
-              desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+              desc: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+              img: 'img/crisantemo.jpg'
           }
       ];
 
