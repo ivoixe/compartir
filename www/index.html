@@ -102,7 +102,7 @@
                 <ons-list-item class="item">
                     <ons-row>
                         <ons-col width="60px">
-                             <img class="item-thum" ng-src={{item.img}} />
+                             <img id="imagen_compartir" class="item-thum" ng-src={{item.img}} />
                         </ons-col>
                         <ons-col>
                             <header>
@@ -110,7 +110,7 @@
                                 <span class="item-label">{{item.label}}</span>
                             </header>
                             <p class="item-desc">{{item.desc}}</p>
-							<button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook',ng-src={{item.img}}, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook</button>
+							<button onclick='window.plugins.socialsharing.shareViaFacebook("Message via Facebook",document.getElementById("imagen_compartir"), null, function() {console.log("share ok")}, function(errormsg){alert(errormsg)})'>msg via Facebook</button>
                         </ons-col>
                     </ons-row>
                 </ons-list-item>
