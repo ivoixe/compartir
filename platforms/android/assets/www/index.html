@@ -75,11 +75,11 @@
                         </ons-col>
                         <ons-col>
                             <header>
-                                <span class="item-title">{{item.title}}</span>
+                                <span id="titulo_texto" class="item-title">{{item.title}}</span>
                                 <span class="item-label">{{item.label}}</span>
                             </header>
                             <p class="item-desc">{{item.desc}}</p>
-							<button  onclick="window.plugins.socialsharing.share(document.getElementById('imagen_compartir').innerHTML )" >msg via Facebook</button>
+							<button  onclick="window.plugins.socialsharing.share(document.getElementById('titulo_texto').innerHTML,document.getElementById('titulo_texto').innerHTML)" >msg via Facebook</button>
                         </ons-col>
                     </ons-row>
                 </ons-list-item>
