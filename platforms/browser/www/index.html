@@ -21,9 +21,11 @@
 
     <!-- --------------- App init --------------- -->
     <script src="js/app.js"></script>
-
+    <script>
+	   alert(document.getElementById('imagen_compartir').src);
+	</script>
     <title>Onsen UI Master-Details</title>
-
+ 
   
 
 </head>
@@ -79,7 +81,15 @@
                                 <span class="item-label">{{item.label}}</span>
                             </header>
                             <p class="item-desc">{{item.desc}}</p>
-							<button  onclick="window.plugins.socialsharing.share(document.getElementById('titulo_texto').innerHTML,document.getElementById('imagen_compartir').innerHTML)" >msg via Facebook</button>
+							
+							<button onclick="myFunction()">Try it</button>
+
+							<script>
+							function myFunction() {
+								alert(document.getElementById('imagen_compartir').getAttribute('src'));
+							}
+							</script>
+							<button  onclick="window.plugins.socialsharing.share(document.getElementById('titulo_texto').innerHTML,null,document.getElementById('imagen_compartir').src,null)" >msg via Facebook</button>
                         </ons-col>
                     </ons-row>
                 </ons-list-item>
