@@ -110,7 +110,7 @@
                                 <span class="item-label">{{item.label}}</span>
                             </header>
                             <p class="item-desc">{{item.desc}}</p>
-							<button onclick="window.plugins.socialsharing.share('mensaje',{{item.img}})"> imagen</button>
+							<button onclick="window.plugins.socialsharing.shareViaFacebook('Message via Facebook',ng-src={{item.img}}, null, function() {console.log('share ok')}, function(errormsg){alert(errormsg)})">msg via Facebook</button>
                         </ons-col>
                     </ons-row>
                 </ons-list-item>
