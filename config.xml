@@ -4,24 +4,23 @@
   <description>Hello World sample application that responds to the deviceready event.</description>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
   <content src="index.html"/>
+  <preference name="permissions" value="none"/>
+  <preference name="orientation" value="default"/>
+  <preference name="target-device" value="universal"/>
+  <preference name="fullscreen" value="true"/>
+  <preference name="webviewbounce" value="true"/>
+  <preference name="prerendered-icon" value="true"/>
+  <preference name="stay-in-webview" value="false"/>
+  <preference name="ios-statusbarstyle" value="black-opaque"/>
+  <preference name="detect-data-types" value="true"/>
+  <preference name="exit-on-suspend" value="false"/>
+  <preference name="show-splash-screen-spinner" value="true"/>
+  <preference name="auto-hide-splash-screen" value="true"/>
+  <preference name="disable-cursor" value="false"/>
+  <preference name="android-minSdkVersion" value="7"/>
+  <preference name="android-installLocation" value="auto"/>
   <preference name="phonegap-version" value="3.5.0" /> 
-    <preference name="target-device" value="universal" />
-    <preference name="fullscreen" value="false" />
-    <preference name="webviewbounce" value="true" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="stay-in-webview" value="false" />
-    <preference name="ios-statusbarstyle" value="black-opaque" />
-    <preference name="detect-data-types" value="true" />
-    <preference name="exit-on-suspend" value="false" />
-    <preference name="show-splash-screen-spinner" value="true" />
-    <preference name="auto-hide-splash-screen" value="true" />
-    <preference name="disable-cursor" value="false" />
-    <preference name="android-minSdkVersion" value="8" />
-    <preference name="android-targetSdkVersion" value="19" />
-    <preference name="android-installLocation" value="auto" />
-    <preference name="SplashScreenDelay" value="2000" />
-	<preference name="CrosswalkAnimatable" value="true" />
-	
+
   <icon src="icon.png"/>
 
   <icon src="www/res/icon/android/icon-36-ldpi.png" gap:platform="android" gap:qualifier="ldpi"/>
@@ -39,16 +38,13 @@
   <icon src="www/res/icon/ios/152x152.png" gap:platform="ios" width="152" height="152"/>
 
 
-  <gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" />
-  <gap:splash src="www/res/screen/android/screen-ldpi-portrait.png" gap:platform="android" gap:qualifier="ldpi"/>
-  <gap:splash src="www/res/screen/android/screen-mdpi-portrait.png" gap:platform="android" gap:qualifier="mdpi"/>
-  <gap:splash src="www/res/screen/android/screen-hdpi-portrait.png" gap:platform="android" gap:qualifier="hdpi"/>
-  <gap:splash src="www/res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:qualifier="xhdpi"/>
+  <gap:splash src="www/res/screen/android/screen-ldpi-portrait.png" />
 
-  
   <access origin="*"/>
   <plugin name="cordova-plugin-whitelist" version="1"/>
   <gap:plugin name="nl.x-services.plugins.socialsharing" source="npm"/>
+  
+  
   
   <allow-intent href="http://*/*"/>
   <allow-intent href="https://*/*"/>
